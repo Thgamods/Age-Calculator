@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: hsl(0, 0%, 86%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+main{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 8rem 0.1rem auto;
+    height: 25rem;
+    width: 30rem;
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+.input_Contents{
+    display: inline-grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: auto;
+}
+main input{
+    height: 3.5rem;   
+    width: 6rem;
+    margin-top: 0.5rem;
+    border-width: 0.1rem;
+    border-radius: 0.5rem;
+}
+.entry {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: hsl(0, 1%, 44%);
+    font-family: 'Outfit', sans-serif;
+}
+.entry input{
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 8%);
+}
+.hr{
+    grid-column: 1;
+    grid-row: 2;
+    opacity: 30%;
+    padding-left: 1.5rem;
+}
+.output{
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 20%);
+    font-size: 32px;
+}
+.dash{
+    display: inline-grid;
+    padding-left: 1.5rem;
+    color: hsl(259, 100%, 65%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    font-style: italic;
+}
+.output_Display{
+    display: inline-grid;
+    padding-left: 1.5rem;
+    color: hsl(0, 0%, 8%);
+    font-style: italic;
+    font-size: 4.5rem;
+    font-weight: 700;
+    font-family: 'Outfit', sans-serif;
+}
+.btn input{
+    padding-top: 5rem;
+    height: 5rem;
+    width: 5rem;
+}

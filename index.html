@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <title>Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      display: flex;
+      position: fixed;
+      top: 5px;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="input_Contents">
+      <div class="entry">
+        Day
+        <br>
+        <input type="text" inputmode="numeric" maxlength="2" pattern="/d" name="Day" id="input_Day" value="DD">
+      </div>
+      <div class="entry">
+        Month
+        <br>
+        <input type="text" inputmode="numeric" maxlength="2" pattern="/d" name="Month" id="input_Month" value="MM">
+      </div>
+      <div class="entry">
+        Year
+        <br>
+        <input type="text" inputmode="numeric" pattern="/d" name="Year" id="input_Year" value="YYYY">
+      </div>
+    </div>
+
+    <div class="hr">
+      <hr>
+    </div>
+
+    <div class="output">
+      <div class="show_Output">
+        <div class="dash">- - </div><div class="output_Display"> years</div>
+        <br>
+      </div>
+      <div class="show_Output">
+        <div class="dash">- - </div><div class="output_Display"> months</div>
+        <br>
+      </div>
+      <div class="show_Output">
+        <div class="dash">- - </div><div class="output_Display">days</div>
+      </div>
+    </div>
+
+    <div class="btn">
+      <input type="image" src="./assets/images/icon-arrow.png" alt="input" id="arrow_Btn">
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
+    Coded by <a href="#"> Thgamods!</a>.
+  </div>
+</body>
+<script type="text/javascript" src="./index.js"></script>
+
+</html>
