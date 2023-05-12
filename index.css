@@ -67,8 +67,8 @@ main input{
 }
 .output_Display{
     display: inline-grid;
-    padding-left: 1.5rem;
-    color: hsl(0, 0%, 8%);
+    padding-left: 1.2rem;
+    color: hsl(0, 0%, 0%);
     font-style: italic;
     font-size: 4.5rem;
     font-weight: 700;
@@ -78,4 +78,16 @@ main input{
     padding-top: 5rem;
     height: 5rem;
     width: 5rem;
+}
+.empty{
+    font-size: 0.7rem;
+    color: red;
+    display: none;
+    opacity: 70%;
+}
+.invalid{
+    font-size: 0.7rem;
+    color: red;
+    display: none;
+    opacity: 70%;
 }

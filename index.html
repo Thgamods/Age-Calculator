@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./index.css">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" src="./Import_Sources/jquery-3.6.4.min.js"></script>
 
 
   <title>Age calculator app</title>
@@ -33,20 +34,26 @@
 <body>
   <main>
     <div class="input_Contents">
-      <div class="entry">
+      <div class="entry" id="entry_Day">
         Day
         <br>
-        <input type="text" inputmode="numeric" maxlength="2" pattern="/d" name="Day" id="input_Day" value="DD">
+        <input type="text" inputmode="numeric" maxlength="2" pattern="/d" name="Day" id="input_Day">
+        <div class="empty" id="empty_Day">This field is required</div>
+        <div class="invalid" id="invalid_Day">Must be a valid day</div>
       </div>
-      <div class="entry">
+      <div class="entry" id="entry_Month">
         Month
         <br>
-        <input type="text" inputmode="numeric" maxlength="2" pattern="/d" name="Month" id="input_Month" value="MM">
+        <input type="text" inputmode="numeric" maxlength="2" pattern="/d" name="Month" id="input_Month">
+        <div class="empty" id="empty_Month">This field is required</div>
+        <div class="invalid" id="invalid_Month">Must be a valid month</div>
       </div>
-      <div class="entry">
+      <div class="entry" id="entry_Year">
         Year
         <br>
-        <input type="text" inputmode="numeric" pattern="/d" name="Year" id="input_Year" value="YYYY">
+        <input type="text" inputmode="numeric" pattern="/d" name="Year" id="input_Year">
+        <div class="empty" id="empty_Year">This field is required</div>
+        <div class="invalid" id="invalid_Year">Must be in past</div>
       </div>
     </div>
 
@@ -56,20 +63,23 @@
 
     <div class="output">
       <div class="show_Output">
-        <div class="dash">- - </div><div class="output_Display"> years</div>
+        <div class="dash" id="dash_Year">- - </div>
+        <div class="output_Display"> years</div>
         <br>
       </div>
       <div class="show_Output">
-        <div class="dash">- - </div><div class="output_Display"> months</div>
+        <div class="dash" id="dash_Month">- - </div>
+        <div class="output_Display"> months</div>
         <br>
       </div>
       <div class="show_Output">
-        <div class="dash">- - </div><div class="output_Display">days</div>
+        <div class="dash" id="dash_Day">- - </div>
+        <div class="output_Display">days</div>
       </div>
     </div>
 
     <div class="btn">
-      <input type="image" src="./assets/images/icon-arrow.png" alt="input" id="arrow_Btn">
+      <input type="image" src="./assets/images/icon-arrow.svg" alt="input" id="arrow_Btn">
     </div>
   </main>
 
@@ -77,7 +87,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
     Coded by <a href="#"> Thgamods!</a>.
   </div>
+
+  <script type="text/javascript" src="./index.js"></script>
 </body>
-<script type="text/javascript" src="./index.js"></script>
 
 </html>

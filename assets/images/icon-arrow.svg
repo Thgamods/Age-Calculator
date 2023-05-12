@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg
+   version="1.1"
+   id="svg275"
+   width="205"
+   height="204"
+   viewBox="0 0 205 204"
+   sodipodi:docname="icon-arrow.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs279" />
+  <sodipodi:namedview
+     id="namedview277"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.4165554"
+     inkscape:cx="80.072651"
+     inkscape:cy="127.04033"
+     inkscape:window-width="1600"
+     inkscape:window-height="877"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg275" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Real"
+     style="display:inline">
+    <ellipse
+       style="fill:#804dfb;fill-opacity:1"
+       id="path392"
+       cx="100.82798"
+       cy="104.38363"
+       rx="94.732582"
+       ry="95.240532" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="lines">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.334;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 100.73378,58.52096 c -0.35252,87.07123 -0.70504,88.12878 -0.70504,88.12878 z"
+       id="path949" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.222;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 59.990701,105.2072 c 0,0 40.274809,0 39.939182,41.95292"
+       id="path1113" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2.2732;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 143.29532,105.48791 c 0,0 -38.73418,-5.02923 -43.19032,40.95229"
+       id="path1792" />
+  </g>
+</svg>
