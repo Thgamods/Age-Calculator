@@ -110,9 +110,11 @@ function valid_date_checker(day, month, year) {
 
 function calculate_days(days) {
     days_number += days;
-    if (days_number >= 30) {
-        days_number -= 31;
-        months_number += 1;
+    for (let i = 30; i <= days_number; i + 30) {
+        if (days_number >= 30) {
+            days_number -= 31;
+            months_number += 1;
+        }
     }
 };
 
@@ -134,12 +136,6 @@ function changeImage() {
 }
 
 function revert_To_Normal() {
-    $(".invalid").css('display', 'none');
-    $(".entry").css('color', 'black');
-    $(".entry input").css('border-color', 'black');
-}
-
-function result() {
     empty_Day = false;
     empty_Month = false;
     empty_Year = false;
@@ -151,6 +147,12 @@ function result() {
     days_number = 0;
     months_number = 0;
     years_number = 0;
+    $(".invalid").css('display', 'none');
+    $(".entry").css('color', 'black');
+    $(".entry input").css('border-color', 'black');
+}
+
+function result() {
     revert_To_Normal();
     entered_day = document.getElementById("input_Day").value;
     entered_month = document.getElementById("input_Month").value;
@@ -177,7 +179,7 @@ function result() {
             'border-color': 'black',
         });
         $(".entry").css({
-            'color': 'black',
+            'color': 'hsl(0, 1%, 44%)',
         });
     }
     else if (empty) {
@@ -222,4 +224,9 @@ function result() {
 
 
 document.getElementById('arrow_Btn').onclick = result;
+/* $(document).keydown(result(event) { 
+    if (_event.keyCode === 13) {
+        $('#arrow_Btn').click()
+    }
+}); */
 

@@ -1,0 +1,52 @@
+@media screen and (max-width: 500px) {
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: 9rem 1rem auto;
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .entry {
+        padding-bottom: 2rem;
+        margin-left: 0.6rem;
+    }
+
+    .output_Display,
+    .dash {
+        font-size: 4rem;
+    }
+
+    .output {
+        padding-top: 2rem;
+    }
+    
+    .hr hr{
+        justify-self: center;
+        align-self: center;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    
+    .hr{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    
+    .btn {
+        justify-self: center;
+        align-self: center;
+        grid-row: 2;
+        grid-column: 1;
+        z-index: 1;
+    }
+    
+    .btn input {
+        height: 4rem;
+        width: 4rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    #entry_Year input {
+        margin-right: 2rem;
+    }
+}
