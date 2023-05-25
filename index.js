@@ -73,15 +73,15 @@ function valid_date_checker(day, month, year) {
                 invalid = true;
                 invalid_Month = true;
             }
-            else if (month == 1 | 3 | 5 | 7 | 8 | 10 | 12 && day <= 31) {
-                days_number += (31 - day);
-            }
-
-
-            if (month == 4 | 6 | 9 | 11 && day > 30) {
+            else if (month == 4 | 6 | 9 | 11 && day > 30) {
                 invalid = true;
                 invalid_Month = true;
                 invalid_Day = true;
+
+
+            if (month == 1 | 3 | 5 | 7 | 8 | 10 | 12 && day <= 31) {
+                days_number += (31 - day);
+            }
             }
             else if (month == 4 | 6 | 9 | 11 && day <= 30) {
                 days_number += (30 - day);
@@ -109,7 +109,7 @@ function valid_date_checker(day, month, year) {
 };
 
 function calculate_days(days) {
-    days_number += days;
+    days_number += days + 1;
     for (let i = 30; i <= days_number; i + 30) {
         if (days_number >= 30) {
             days_number -= 31;
